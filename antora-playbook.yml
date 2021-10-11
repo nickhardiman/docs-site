@@ -1,25 +1,29 @@
-# categories (site, content, ui and asciidoc) are described here. 
+# categories (site, content, ui, etc.) are described here. 
 # https://docs.antora.org/antora/2.1/playbook/playbook-schema/
 # A demo site example file is here. 
 # https://gitlab.com/antora/demo/docs-site/-/blob/main/antora-playbook.yml
 site:
   title: Nick's Home Lab, hackity hack
-  url: https://rhel8-on-pn50.netlify.app
-  #start_page: rhel8-on-pn50:ROOT:index.adoc
+  url: https://nickhardiman.netlify.app
+  start_page: infrastructure-as-code::index.adoc
+  #start_page: rhel8-on-pn50::index.adoc
   keys:
     google_analytics: 'G-7K2RCE6KXL'
 content:
   sources: 
   - url: https://github.com/nickhardiman/articles-iac.git
+    branches: main
   - url: https://github.com/nickhardiman/articles-rhel8.git
-  #  branches: main
-  #  edit_url: false
+    branches: main
+  edit_url: false
 # https://docs.antora.org/antora/2.3/playbook/configure-ui/
 ui: 
   bundle:
-    url: https://github.com/docs-site/raw/main/ui-bundle.zip
-    #url: https://github.com/nickhardiman/antora-ui/raw/master/build/ui-bundle.zip
+    url: https://github.com/nickhardiman/docs-ui/raw/main/build/ui-bundle.zip
+    #url: https://github.com/nickhardiman/docs-site/raw/main/ui-bundle.zip
     snapshot: true
+  # if this path does not exist, I get this error 
+  #  error: problem encountered while reading ui.supplemental_files: ENOENT: no such file or directory
   supplemental_files: ./supplemental_ui
 asciidoc:
   attributes:
@@ -27,3 +31,4 @@ asciidoc:
     page-pagination: true 
 runtime:
   fetch: true
+

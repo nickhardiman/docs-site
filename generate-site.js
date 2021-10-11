@@ -6,6 +6,7 @@ const buildPlaybook = require('@antora/playbook-builder')
 const classifyContent = require('@antora/content-classifier')
 const convertDocuments = require('@antora/document-converter')
 const createPageComposer = require('@antora/page-composer')
+// https://github.com/Mogztter/antora-lunr
 const generateIndex = require('antora-lunr')
 const loadUi = require('@antora/ui-loader')
 const mapSite = require('@antora/site-mapper')
@@ -25,6 +26,7 @@ async function generateSite (args, env) {
   const composePage = createPageComposer(playbook, contentCatalog, uiCatalog, env)
   pages.forEach((page) => composePage(page, contentCatalog, navigationCatalog))
   const siteFiles = mapSite(playbook, pages).concat(produceRedirects(playbook, contentCatalog))
+  // https://github.com/Mogztter/antora-lunr
   const index = generateIndex(playbook, pages, contentCatalog, env)
   siteFiles.push(generateIndex.createIndexFile(index))
 

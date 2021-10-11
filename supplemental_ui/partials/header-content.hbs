@@ -1,0 +1,41 @@
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{or site.url (or siteRootUrl siteRootPath)}}">{{site.title}}</a>
+      {{#if env.DOCSEARCH_ENABLED}}
+        <div class="navbar-item">
+          <input id="search-input" type="text" placeholder="Search docs">
+        </div>
+      {{/if}}
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">On the web</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://www.linkedin.com/in/nick-hardiman-at-im/">LinkedIn</a>
+            <a class="navbar-item" href="https://github.com/nickhardiman">GitHub</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Components</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://nickhardiman.netlify.app/rhel8-on-pn50/dev/index.html">RHEL8 on PN50</a>
+            <a class="navbar-item" href="https://nickhardiman.netlify.app/infrastructure-as-code/dev/index.html">Infrastructure as code</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
