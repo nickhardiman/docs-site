@@ -26,5 +26,5 @@ cp -r $NODE_MODULES/antora-lunr/supplemental_ui .
 cp ./generate-site.js $NODE_MODULES/@antora/site-generator-default/lib/
 #
 # transform asciidoctor to HTML
-DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora antora-playbook.yml
+DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora generate --fetch antora-playbook.yml
 

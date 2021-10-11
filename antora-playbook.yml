@@ -5,12 +5,14 @@
 site:
   title: Nick's Home Lab, hackity hack
   url: https://nickhardiman.netlify.app
-  start_page: infrastructure-as-code::index.adoc
-  #start_page: rhel8-on-pn50::index.adoc
+  #start_page: infrastructure-as-code::index.adoc
+  start_page: rhel8-on-pn50::index.adoc
   keys:
     google_analytics: 'G-7K2RCE6KXL'
 content:
   sources: 
+  - url: https://github.com/nickhardiman/articles-fedora-rpi4.git
+    branches: main
   - url: https://github.com/nickhardiman/articles-iac.git
     branches: main
   - url: https://github.com/nickhardiman/articles-rhel8.git
