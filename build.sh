@@ -22,7 +22,7 @@ HOME=/opt/buildhome
 #HOME=/Users/nhardima
 
 NODE_MODULES=$HOME/.nvm/versions/node/$NODE_VERSION/lib/node_modules
-cp -r $NODE_MODULES/antora-lunr/supplemental_ui .
+#cp -r $NODE_MODULES/antora-lunr/supplemental_ui .
 cp ./generate-site.js $NODE_MODULES/@antora/site-generator-default/lib/
 #
 # transform asciidoctor to HTML
