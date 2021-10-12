@@ -3,7 +3,7 @@
 # A demo site example file is here. 
 # https://gitlab.com/antora/demo/docs-site/-/blob/main/antora-playbook.yml
 site:
-  title: Nick's Home Lab, hackity hack
+  title: Nick's Home Lab, tappity tap
   url: https://nickhardiman.netlify.app
   #start_page: infrastructure-as-code::index.adoc
   start_page: rhel8-on-pn50::index.adoc
