@@ -33,3 +33,5 @@ DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora generate --fetch antora-play
 PUBLISH_DIRECTORY=build/site
 cp ./favicon.ico $PUBLISH_DIRECTORY
 
+# visual check
+ls $HOME/$PUBLISH_DIRECTORY
