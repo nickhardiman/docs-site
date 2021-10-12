@@ -19,12 +19,17 @@ npm i -g antora-lunr
 #NODE_VERSION=$(node --version)
 
 HOME=/opt/buildhome
-#HOME=/Users/nhardima
-
 NODE_MODULES=$HOME/.nvm/versions/node/$NODE_VERSION/lib/node_modules
+# This file has a few extra lines of javascript for lunr search.
 #cp -r $NODE_MODULES/antora-lunr/supplemental_ui .
 cp ./generate-site.js $NODE_MODULES/@antora/site-generator-default/lib/
-#
+
 # transform asciidoctor to HTML
 DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora generate --fetch antora-playbook.yml
+
+# Add a favicon. 
+# For the <link rel="icon" ...> approach, see 
+# https://gitlab.com/antora/antora-ui-default/-/issues/69
+PUBLISH_DIRECTORY=build/site
+cp ./favicon.ico $PUBLISH_DIRECTORY
 
