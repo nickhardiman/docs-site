@@ -17,12 +17,13 @@ content:
     branches: main
   - url: https://github.com/nickhardiman/articles-rhel8.git
     branches: main
+  - url: https://github.com/nickhardiman/articles-ocp4.git
+    branches: main
   edit_url: false
 # https://docs.antora.org/antora/2.3/playbook/configure-ui/
 ui: 
   bundle:
     url: https://github.com/nickhardiman/docs-ui/raw/main/build/ui-bundle.zip
-    #url: https://github.com/nickhardiman/docs-site/raw/main/ui-bundle.zip
     snapshot: true
   # supplemental_files is not properly documented. Here's something.
   # https://docs.antora.org/antora/2.3/publish-to-github-pages/#use-the-supplemental-ui
