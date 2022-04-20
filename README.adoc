@@ -3,6 +3,7 @@ Nick Hardiman
 :source-highlighter: highlight.js
 :revdate: 05-01-2021
 
+Works with antora 2
 
 I'm working on some pieces of writing.
 
