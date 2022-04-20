@@ -1,9 +1,9 @@
 = documents site
 Nick Hardiman 
 :source-highlighter: highlight.js
-:revdate: 05-01-2021
+:revdate: 20-04-2023
 
-Works with antora 2
+Attempt antora 3
 
 I'm working on some pieces of writing.
 
