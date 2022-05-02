@@ -1,9 +1,23 @@
 = documents site
 Nick Hardiman 
 :source-highlighter: highlight.js
-:revdate: 20-04-2023
+:revdate: 20-04-2022
 
-Attempt antora 3
+source for https://hardiman.consulting/
 
-I'm working on some pieces of writing.
+This is an Antora site. 
+https://docs.antora.org/antora/latest/playbook/
+
+== build
+
+```
+# get this repo
+git clone https://github.com/nickhardiman/docs-site
+cd docs-site
+# get all the other repos and translate from Asciidoctor to HTML
+antora --fetch antora-playbook.yml
+# view
+sudo dnf install lynx
+lynx build/site/index.html 
+```
 
