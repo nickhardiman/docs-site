@@ -13,9 +13,11 @@ content:
   sources: 
   - url: https://github.com/nickhardiman/articles-fedora-rpi4.git
     branches: main
-  - url: https://github.com/nickhardiman/articles-iac.git
+  - url: https://github.com/nickhardiman/articles-ansible.git
     branches: main
   - url: https://github.com/nickhardiman/articles-rhel8.git
+    branches: main
+  - url: https://github.com/nickhardiman/articles-rhel9.git
     branches: main
   - url: https://github.com/nickhardiman/articles-ocp4.git
     branches: main
@@ -29,7 +31,7 @@ ui:
   # https://docs.antora.org/antora/2.3/publish-to-github-pages/#use-the-supplemental-ui
   # if the file path does not exist, this error appears. 
   #  error: problem encountered while reading ui.supplemental_files: ENOENT: no such file or directory
-  supplemental_files: ./supplemental_ui
+  #supplemental_files: ./supplemental_ui
 asciidoc:
   attributes:
     experimental: true 
