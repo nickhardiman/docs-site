@@ -1,14 +1,15 @@
 # categories (site, content, ui, etc.) are described here. 
-# https://docs.antora.org/antora/2.1/playbook/playbook-schema/
+# https://docs.antora.org/antora/latest/playbook/
 # A demo site example file is here. 
 # https://gitlab.com/antora/demo/docs-site/-/blob/main/antora-playbook.yml
+# https://docs.antora.org/antora/latest/playbook/configure-site/
 site:
   title: Nick's Home Lab, tappity tap
-  url: https://nickhardiman.netlify.app
+  url: https://hardiman.consulting
   #start_page: infrastructure-as-code::index.adoc
   start_page: rhel8-on-pn50::index.adoc
   keys:
-    google_analytics: 'G-7K2RCE6KXL'
+    google_analytics: 'G-Q3WBZX4JYP'
 content:
   sources: 
   - url: https://github.com/nickhardiman/articles-fedora-rpi4.git
@@ -25,7 +26,8 @@ content:
 # https://docs.antora.org/antora/2.3/playbook/configure-ui/
 ui: 
   bundle:
-    url: https://github.com/nickhardiman/docs-ui/raw/main/build/ui-bundle.zip
+    url: https://gitlab.com/nhardima/antora-ui-default/-/raw/master/build/ui-bundle.zip
+    #url: https://github.com/nickhardiman/docs-ui/raw/main/build/ui-bundle.zip
     snapshot: true
   # supplemental_files is not properly documented. Here's something.
   # https://docs.antora.org/antora/2.3/publish-to-github-pages/#use-the-supplemental-ui
