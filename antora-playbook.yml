@@ -2,6 +2,13 @@
 # https://docs.antora.org/antora/latest/playbook/
 # A demo site example file is here. 
 # https://gitlab.com/antora/demo/docs-site/-/blob/main/antora-playbook.yml
+
+# https://gitlab.com/antora/antora-lunr-extension
+antora:
+  extensions:
+  - '@antora/lunr-extension'
+  #- require: '@antora/lunr-extension'
+
 # https://docs.antora.org/antora/latest/playbook/configure-site/
 site:
   title: Nick's Home Lab, tappity tap
@@ -23,21 +30,26 @@ content:
   - url: https://github.com/nickhardiman/articles-ocp4.git
     branches: main
   edit_url: false
-# https://docs.antora.org/antora/2.3/playbook/configure-ui/
+
+# https://docs.antora.org/antora/latest/playbook/ui-bundle-url/
 ui: 
   bundle:
     url: https://gitlab.com/nhardima/antora-ui-default/-/raw/master/build/ui-bundle.zip
     #url: https://github.com/nickhardiman/docs-ui/raw/main/build/ui-bundle.zip
+    # https://docs.antora.org/antora/latest/playbook/ui-bundle-url/
     snapshot: true
   # supplemental_files is not properly documented. Here's something.
   # https://docs.antora.org/antora/2.3/publish-to-github-pages/#use-the-supplemental-ui
   # if the file path does not exist, this error appears. 
   #  error: problem encountered while reading ui.supplemental_files: ENOENT: no such file or directory
-  #supplemental_files: ./supplemental_ui
+  supplemental_files: ./supplemental_ui
+
 asciidoc:
   attributes:
     experimental: true 
     page-pagination: true 
+
 runtime:
+  # https://docs.antora.org/antora/latest/playbook/runtime-fetch/#fetch-key
   fetch: true
 
