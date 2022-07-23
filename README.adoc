@@ -16,7 +16,7 @@ The Antora docs call this a https://docs.antora.org/antora/latest/playbook/use-a
 git clone https://github.com/nickhardiman/docs-site
 cd docs-site
 # get all the other repos and translate from Asciidoctor to HTML
-antora --fetch antora-playbook.yml
+antora antora-playbook.yml
 # fetch option added to antora-playbook.yml
 #antora --fetch antora-playbook.yml
 # view
