@@ -29,6 +29,8 @@ content:
     branches: main
   - url: https://github.com/nickhardiman/articles-ocp4.git
     branches: main
+  - url: https://github.com/nickhardiman/articles-satellite6.git
+    branches: main
   edit_url: false
 
 # https://docs.antora.org/antora/latest/playbook/ui-bundle-url/
