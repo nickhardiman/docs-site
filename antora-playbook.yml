@@ -11,10 +11,10 @@ antora:
 
 # https://docs.antora.org/antora/latest/playbook/configure-site/
 site:
-  title: Nick's Home Lab, tappity tap
+  title: Nick's Home Lab, fizz buzz
   url: https://hardiman.consulting
   #start_page: infrastructure-as-code::index.adoc
-  start_page: rhel8-on-pn50::index.adoc
+  start_page: 9@rhel:ROOT:index.adoc
   keys:
     google_analytics: 'G-Q3WBZX4JYP'
 content:
@@ -28,6 +28,8 @@ content:
   - url: https://github.com/nickhardiman/articles-rhel9.git
     branches: main
   - url: https://github.com/nickhardiman/articles-ocp4.git
+    branches: main
+  - url: https://github.com/nickhardiman/articles-satellite6.git
     branches: main
   edit_url: false
 
