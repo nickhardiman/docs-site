@@ -44,7 +44,7 @@ ui:
   # https://docs.antora.org/antora/2.3/publish-to-github-pages/#use-the-supplemental-ui
   # if the file path does not exist, this error appears. 
   #  error: problem encountered while reading ui.supplemental_files: ENOENT: no such file or directory
-  supplemental_files: ./supplemental_ui
+  #supplemental_files: ./supplemental_ui
 
 asciidoc:
   attributes:
