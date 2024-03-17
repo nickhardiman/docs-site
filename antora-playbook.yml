@@ -36,10 +36,18 @@ content:
   edit_url: false
 
 # https://docs.antora.org/antora/latest/playbook/ui-bundle-url/
+# !!! url: behind a proxy causing issues.
+# does not honour http_proxy env vars
+# does work with this
+network:
+    http_proxy: http://gateway.supply.example.com:3128
+    https_proxy: http://gateway.supply.example.com:3128
+    no_proxy: localhost,127.0.0.1,example.com
 ui: 
   bundle:
-    url: https://gitlab.com/nhardima/antora-ui-default/-/raw/master/build/ui-bundle.zip
-    #url: https://github.com/nickhardiman/docs-ui/raw/main/build/ui-bundle.zip
+    url: ../antora-ui-default/build/ui-bundle.zip
+    # url: https://gitlab.com/nhardima/antora-ui-default/-/raw/master/build/ui-bundle.zip
+    # url: https://github.com/nickhardiman/docs-ui/raw/main/build/ui-bundle.zip
     # https://docs.antora.org/antora/latest/playbook/ui-bundle-url/
     snapshot: true
   # supplemental_files is not properly documented. Here's something.
